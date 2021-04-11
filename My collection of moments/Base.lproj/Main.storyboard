@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="My_collection_of_moments" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="My_collection_of_moments" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -38,6 +38,9 @@
                                 <state key="normal" title="Register">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="jzz-QM-YGo" kind="show" id="bD2-An-l1d"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eeD-Zo-JKG">
                                 <rect key="frame" x="57" y="270" width="300" height="34"/>
@@ -54,22 +57,30 @@
                                 <state key="normal" title="Login">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="loginBTN:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WiX-za-fO5"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="emailTF" destination="eeD-Zo-JKG" id="YaO-Oz-GCj"/>
+                        <outlet property="passwordTF" destination="jb2-Lc-f81" id="fwX-ae-bkN"/>
+                        <segue destination="d4c-Hw-LhF" kind="show" id="R36-K4-jQb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="132" y="40"/>
         </scene>
-        <!--View Controller-->
+        <!--Register View Controller-->
         <scene sceneID="1hb-om-CT4">
             <objects>
-                <viewController id="jzz-QM-YGo" sceneMemberID="viewController">
+                <viewController id="jzz-QM-YGo" customClass="RegisterViewController" customModule="My_collection_of_moments" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6Zg-RE-NQV">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Register" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Ub-gf-U1H">
@@ -108,6 +119,9 @@
                                 <state key="normal" title="Login">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="loginBTN:" destination="jzz-QM-YGo" eventType="touchUpInside" id="Qgq-3e-b4H"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Urg-1c-jx7">
                                 <rect key="frame" x="57" y="354" width="300" height="34"/>
@@ -134,6 +148,15 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="Q8d-7I-2gD"/>
                     </view>
+                    <navigationItem key="navigationItem" id="i5I-5i-hyN"/>
+                    <connections>
+                        <outlet property="emailTF" destination="Urg-1c-jx7" id="cMb-vf-r3h"/>
+                        <outlet property="lastNameTF" destination="Jrj-fZ-jdD" id="g8h-c7-RPe"/>
+                        <outlet property="nameTF" destination="2Wv-CN-2hN" id="vek-iy-RLq"/>
+                        <outlet property="password1TF" destination="pcm-d0-kcQ" id="z4i-0z-J2h"/>
+                        <outlet property="password2TF" destination="CjF-Xv-pPN" id="Zg9-5n-MoW"/>
+                        <outlet property="userNameTF" destination="kdb-0g-sUY" id="vRg-4Z-ck9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EsW-ht-Ukd" sceneMemberID="firstResponder"/>
             </objects>
@@ -142,9 +165,9 @@
         <!--My pictures-->
         <scene sceneID="3cu-5C-3uV">
             <objects>
-                <viewController id="nic-jK-vcF" sceneMemberID="viewController">
+                <viewController id="nic-jK-vcF" customClass="MyPicturesViewController" customModule="My_collection_of_moments" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UEa-Ri-1Qd">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="User Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="if5-57-d1I">
@@ -172,7 +195,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="4T8-8j-n1z">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="4T8-8j-n1z">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="EWr-qK-4i5">
@@ -192,12 +215,21 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <state key="normal" backgroundImage="camera.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="cameraBTN:" destination="nic-jK-vcF" eventType="touchUpInside" id="7f4-Zx-Tcm"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="Ruz-QF-jg5"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="My pictures" image="person" catalog="system" id="aIQ-Sf-Oyp"/>
+                    <connections>
+                        <outlet property="emailLB" destination="WXX-bU-JZj" id="OTG-7h-Ifn"/>
+                        <outlet property="photosCV" destination="w02-d3-mHj" id="vap-hS-M7O"/>
+                        <outlet property="userNameLB" destination="if5-57-d1I" id="lb9-s6-eHx"/>
+                        <outlet property="userPhotoIV" destination="fAp-Id-slB" id="BsX-MV-MCo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WYR-6T-Let" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -206,9 +238,9 @@
         <!--Add images-->
         <scene sceneID="nA3-hT-uBd">
             <objects>
-                <viewController id="4Pi-94-89r" sceneMemberID="viewController">
+                <viewController id="4Pi-94-89r" customClass="AddImagesViewController" customModule="My_collection_of_moments" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9yu-id-Urm">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CZW-n4-MLj">
@@ -219,6 +251,9 @@
                                 <state key="normal" title="Add Image">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="addImageBTN:" destination="4Pi-94-89r" eventType="touchUpInside" id="1eM-Mh-1cK"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OuT-lv-Teh">
                                 <rect key="frame" x="57" y="201" width="300" height="180"/>
@@ -232,12 +267,18 @@
                                 <state key="normal" title="Upload">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="uploadBTN:" destination="4Pi-94-89r" eventType="touchUpInside" id="MDX-OS-zlG"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="ix0-b1-so9"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Add images" image="plus.circle" catalog="system" id="Bq5-1T-0zG"/>
+                    <connections>
+                        <outlet property="photoIV" destination="OuT-lv-Teh" id="oxW-4f-Ju1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5ll-jW-P2J" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -246,9 +287,9 @@
         <!--Gallery-->
         <scene sceneID="8a6-QP-MqA">
             <objects>
-                <viewController id="6HS-Ht-b2o" sceneMemberID="viewController">
+                <viewController id="6HS-Ht-b2o" customClass="GalleryViewController" customModule="My_collection_of_moments" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oAb-wX-W4w">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="68y-HZ-Y1z">
@@ -262,7 +303,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="yQL-oR-SkO">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="yQL-oR-SkO">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="zj5-4C-Vmq">
@@ -271,12 +312,19 @@
                                         </collectionViewCellContentView>
                                     </collectionViewCell>
                                 </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="6HS-Ht-b2o" id="jHb-Y6-MHk"/>
+                                    <outlet property="delegate" destination="6HS-Ht-b2o" id="Tlk-WM-LbO"/>
+                                </connections>
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="cKl-sp-dQE"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Gallery" image="doc.richtext" catalog="system" id="WNY-6g-JAG"/>
+                    <connections>
+                        <outlet property="galleryPhotos" destination="68y-HZ-Y1z" id="2qX-bi-FO3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FxX-n4-qAn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -287,7 +335,9 @@
             <objects>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="d4c-Hw-LhF" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="6Tr-Iu-V5d"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="pWg-vs-qHt">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>

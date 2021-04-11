@@ -13,6 +13,12 @@
 		698D8E4C2622A05F00CE0C30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 698D8E4A2622A05F00CE0C30 /* Main.storyboard */; };
 		698D8E4E2622A06700CE0C30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 698D8E4D2622A06700CE0C30 /* Assets.xcassets */; };
 		698D8E512622A06700CE0C30 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 698D8E4F2622A06700CE0C30 /* LaunchScreen.storyboard */; };
+		69E6D99A262376F1002251AA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E6D999262376F1002251AA /* LoginViewController.swift */; };
+		69E6D99C2623771E002251AA /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E6D99B2623771E002251AA /* RegisterViewController.swift */; };
+		69E6D99E2623778F002251AA /* MyPicturesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E6D99D2623778F002251AA /* MyPicturesViewController.swift */; };
+		69E6D9A0262377B6002251AA /* AddImagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E6D99F262377B6002251AA /* AddImagesViewController.swift */; };
+		69E6D9A226237820002251AA /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E6D9A126237820002251AA /* GalleryViewController.swift */; };
+		69E6D9A4262389C0002251AA /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E6D9A3262389C0002251AA /* PhotoCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		698D8E4D2622A06700CE0C30 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		698D8E502622A06700CE0C30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		698D8E522622A06700CE0C30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69E6D999262376F1002251AA /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		69E6D99B2623771E002251AA /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		69E6D99D2623778F002251AA /* MyPicturesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPicturesViewController.swift; sourceTree = "<group>"; };
+		69E6D99F262377B6002251AA /* AddImagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddImagesViewController.swift; sourceTree = "<group>"; };
+		69E6D9A126237820002251AA /* GalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
+		69E6D9A3262389C0002251AA /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +75,12 @@
 				698D8E4D2622A06700CE0C30 /* Assets.xcassets */,
 				698D8E4F2622A06700CE0C30 /* LaunchScreen.storyboard */,
 				698D8E522622A06700CE0C30 /* Info.plist */,
+				69E6D999262376F1002251AA /* LoginViewController.swift */,
+				69E6D99B2623771E002251AA /* RegisterViewController.swift */,
+				69E6D99D2623778F002251AA /* MyPicturesViewController.swift */,
+				69E6D99F262377B6002251AA /* AddImagesViewController.swift */,
+				69E6D9A126237820002251AA /* GalleryViewController.swift */,
+				69E6D9A3262389C0002251AA /* PhotoCollectionViewCell.swift */,
 			);
 			path = "My collection of moments";
 			sourceTree = "<group>";
@@ -138,7 +156,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69E6D99A262376F1002251AA /* LoginViewController.swift in Sources */,
+				69E6D99E2623778F002251AA /* MyPicturesViewController.swift in Sources */,
+				69E6D99C2623771E002251AA /* RegisterViewController.swift in Sources */,
 				698D8E492622A05F00CE0C30 /* ViewController.swift in Sources */,
+				69E6D9A0262377B6002251AA /* AddImagesViewController.swift in Sources */,
+				69E6D9A4262389C0002251AA /* PhotoCollectionViewCell.swift in Sources */,
+				69E6D9A226237820002251AA /* GalleryViewController.swift in Sources */,
 				698D8E452622A05F00CE0C30 /* AppDelegate.swift in Sources */,
 				698D8E472622A05F00CE0C30 /* SceneDelegate.swift in Sources */,
 			);
