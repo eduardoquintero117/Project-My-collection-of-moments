@@ -23,6 +23,13 @@ class LoginViewController: UIViewController {
     
     @IBAction func loginBTN(_ sender: UIButton) {
         
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "menu")
+        vc.modalPresentationStyle = .overFullScreen
+        present(vc, animated: true, completion: nil)
+        
+        
+        
         guard let email = emailTF.text, email !=  "" , let password = passwordTF.text,  password != "" else {
                    return
                }
@@ -34,7 +41,7 @@ class LoginViewController: UIViewController {
             }else{
                 //print("Usuario autentificado")
                 
-                 self.performSegue(withIdentifier: "menu", sender: MyPicturesViewController.self)
+                 //self.performSegue(withIdentifier: "menu", sender: MyPicturesViewController.self)
             }
         }
         
