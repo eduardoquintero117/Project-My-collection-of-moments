@@ -159,7 +159,7 @@
         <!--My pictures-->
         <scene sceneID="3cu-5C-3uV">
             <objects>
-                <viewController storyboardIdentifier="menu" id="nic-jK-vcF" customClass="MyPicturesViewController" customModule="My_collection_of_moments" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="nic-jK-vcF" customClass="MyPicturesViewController" customModule="My_collection_of_moments" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UEa-Ri-1Qd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
