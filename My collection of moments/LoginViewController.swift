@@ -7,10 +7,11 @@
 //
 
 import UIKit
+import Firebase
 
 class LoginViewController: UIViewController {
 
-    
+
     @IBOutlet weak var emailTF: UITextField!
     @IBOutlet weak var passwordTF: UITextField!
     
@@ -21,6 +22,22 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func loginBTN(_ sender: UIButton) {
+        
+        guard let email = emailTF.text, email !=  "" , let password = passwordTF.text,  password != "" else {
+                   return
+               }
+        
+            Auth.auth().signIn(withEmail: email, password: password) { (result, error) in
+            if let error = error {
+                print(error.localizedDescription)
+                return
+            }else{
+                //print("Usuario autentificado")
+                
+                 self.performSegue(withIdentifier: "menu", sender: MyPicturesViewController.self)
+            }
+        }
+        
     }
     
 

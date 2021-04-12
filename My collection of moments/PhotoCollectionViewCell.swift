@@ -18,7 +18,6 @@ class PhotoCollectionViewCell: UICollectionViewCell {
        }()
        override init(frame: CGRect) {
            super.init(frame: frame)
-           print("pintando")
            addSubview(photoView)
        }
        
