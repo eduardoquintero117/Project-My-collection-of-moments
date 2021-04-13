@@ -65,7 +65,7 @@ class RegisterViewController: UIViewController {
         
     }
     func storeUser(uid: String, name: String , lastName: String, userName: String, email: String){
-        let data: [String : Any] = ["name": name, "lastname": lastName,"userName":userName,"email":email,"userPhoto":"-"]
+        let data: [String : Any] = ["name": name, "lastName": lastName,"userName":userName,"email":email]
         getRef.collection("users").document(uid).setData(data, completion: { (error) in
                 if let error = error{
                     self.showMessage(message: error.localizedDescription, title: "Alerta")
