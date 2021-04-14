@@ -65,7 +65,18 @@ class GalleryViewController: UIViewController, UICollectionViewDelegate,UICollec
            return cell
        }
 
-
+     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+            
+            let cell = collectionView.cellForItem(at: indexPath) as! PhotoCollectionViewCell
+            
+           
+             let next = self.storyboard?.instantiateViewController(withIdentifier: "DetailPhotoViewController") as! DetailPhotoViewController
+        
+        
+             next.imagen = cell.photoView.image
+             self.present(next, animated: true, completion: nil)
+        
+        }
 
     func downloadImage(){
         
@@ -110,5 +121,7 @@ extension GalleryViewController: UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         return UIEdgeInsets(top: 60, left: 10, bottom: 10, right: 30)
     }
+    
+    
     
 }

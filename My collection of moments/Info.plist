@@ -60,5 +60,9 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>Access to folders is required to save photos</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Access to folders is required to save photos</string>
 </dict>
 </plist>

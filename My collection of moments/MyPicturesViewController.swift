@@ -30,7 +30,7 @@ class MyPicturesViewController: UIViewController, UIImagePickerControllerDelegat
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    self.navigationController?.isNavigationBarHidden = true
+    
         userPhotoIV.makeRounded()
         userPhotoIV.contentMode = .scaleAspectFill
         //userPhotoIV.layer.transform = CATransform3DMakeScale(2, 2, 2)
@@ -111,7 +111,7 @@ class MyPicturesViewController: UIViewController, UIImagePickerControllerDelegat
         
             //--activity
             let activityIndicator = UIActivityIndicatorView.init(style: .large)
-            activityIndicator.color = .red
+            activityIndicator.color = .blue
             activityIndicator.center = view.center
             activityIndicator.center = userPhotoIV.center
             activityIndicator.startAnimating()
@@ -144,7 +144,7 @@ class MyPicturesViewController: UIViewController, UIImagePickerControllerDelegat
            
                //----activity
                let activityIndicator = UIActivityIndicatorView.init(style: .large)
-               activityIndicator.color = .red
+               activityIndicator.color = .blue
                activityIndicator.center = view.center
                activityIndicator.center = photoIV.center
                activityIndicator.startAnimating()

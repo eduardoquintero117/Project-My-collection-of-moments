@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		691725C826261B7E00335406 /* DetailPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691725C726261B7E00335406 /* DetailPhotoViewController.swift */; };
+		691725CA262644CD00335406 /* ImageScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691725C9262644CD00335406 /* ImageScrollView.swift */; };
 		698D8E452622A05F00CE0C30 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698D8E442622A05F00CE0C30 /* AppDelegate.swift */; };
 		698D8E472622A05F00CE0C30 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698D8E462622A05F00CE0C30 /* SceneDelegate.swift */; };
 		698D8E492622A05F00CE0C30 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698D8E482622A05F00CE0C30 /* ViewController.swift */; };
@@ -24,7 +26,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		698D8E412622A05F00CE0C30 /* My collection of moments.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My collection of moments.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		691725C726261B7E00335406 /* DetailPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPhotoViewController.swift; sourceTree = "<group>"; };
+		691725C9262644CD00335406 /* ImageScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageScrollView.swift; sourceTree = "<group>"; };
+		698D8E412622A05F00CE0C30 /* My collection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My collection.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		698D8E442622A05F00CE0C30 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		698D8E462622A05F00CE0C30 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		698D8E482622A05F00CE0C30 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -69,7 +73,7 @@
 		698D8E422622A05F00CE0C30 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				698D8E412622A05F00CE0C30 /* My collection of moments.app */,
+				698D8E412622A05F00CE0C30 /* My collection.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -91,6 +95,8 @@
 				69E6D99F262377B6002251AA /* AddImagesViewController.swift */,
 				69E6D9A126237820002251AA /* GalleryViewController.swift */,
 				69E6D9A3262389C0002251AA /* PhotoCollectionViewCell.swift */,
+				691725C726261B7E00335406 /* DetailPhotoViewController.swift */,
+				691725C9262644CD00335406 /* ImageScrollView.swift */,
 			);
 			path = "My collection of moments";
 			sourceTree = "<group>";
@@ -131,7 +137,7 @@
 			);
 			name = "My collection of moments";
 			productName = "My collection of moments";
-			productReference = 698D8E412622A05F00CE0C30 /* My collection of moments.app */;
+			productReference = 698D8E412622A05F00CE0C30 /* My collection.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -230,8 +236,10 @@
 			files = (
 				69E6D99A262376F1002251AA /* LoginViewController.swift in Sources */,
 				69E6D99E2623778F002251AA /* MyPicturesViewController.swift in Sources */,
+				691725C826261B7E00335406 /* DetailPhotoViewController.swift in Sources */,
 				69E6D99C2623771E002251AA /* RegisterViewController.swift in Sources */,
 				698D8E492622A05F00CE0C30 /* ViewController.swift in Sources */,
+				691725CA262644CD00335406 /* ImageScrollView.swift in Sources */,
 				69E6D9A0262377B6002251AA /* AddImagesViewController.swift in Sources */,
 				69E6D9A4262389C0002251AA /* PhotoCollectionViewCell.swift in Sources */,
 				69E6D9A226237820002251AA /* GalleryViewController.swift in Sources */,
@@ -388,7 +396,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.new.My-collection-of-moments";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "My collection";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -406,7 +414,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.new.My-collection-of-moments";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "My collection";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

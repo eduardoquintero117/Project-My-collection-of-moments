@@ -11,7 +11,7 @@
         <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="My_collection_of_moments" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="My_collection" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -79,7 +79,7 @@
         <!--Register View Controller-->
         <scene sceneID="1hb-om-CT4">
             <objects>
-                <viewController id="jzz-QM-YGo" customClass="RegisterViewController" customModule="My_collection_of_moments" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="jzz-QM-YGo" customClass="RegisterViewController" customModule="My_collection" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6Zg-RE-NQV">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -159,7 +159,7 @@
         <!--My pictures-->
         <scene sceneID="3cu-5C-3uV">
             <objects>
-                <viewController id="nic-jK-vcF" customClass="MyPicturesViewController" customModule="My_collection_of_moments" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="nic-jK-vcF" customClass="MyPicturesViewController" customModule="My_collection" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UEa-Ri-1Qd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -297,7 +297,7 @@
         <!--Gallery-->
         <scene sceneID="8a6-QP-MqA">
             <objects>
-                <viewController id="6HS-Ht-b2o" customClass="GalleryViewController" customModule="My_collection_of_moments" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="6HS-Ht-b2o" customClass="GalleryViewController" customModule="My_collection" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oAb-wX-W4w">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -344,6 +344,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FxX-n4-qAn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2040.5797101449277" y="839.73214285714278"/>
+        </scene>
+        <!--Detail Photo View Controller-->
+        <scene sceneID="2tt-D5-EXu">
+            <objects>
+                <viewController storyboardIdentifier="DetailPhotoViewController" id="Clt-hU-1xh" customClass="DetailPhotoViewController" customModule="My_collection" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GAP-ZD-EtP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="cc5-Rb-Rhe"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="riU-uG-WCe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3167" y="840"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="mzE-Ay-BJN">
