@@ -3,20 +3,32 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		691725C826261B7E00335406 /* DetailPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691725C726261B7E00335406 /* DetailPhotoViewController.swift */; };
+		691725CA262644CD00335406 /* ImageScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691725C9262644CD00335406 /* ImageScrollView.swift */; };
 		698D8E452622A05F00CE0C30 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698D8E442622A05F00CE0C30 /* AppDelegate.swift */; };
 		698D8E472622A05F00CE0C30 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698D8E462622A05F00CE0C30 /* SceneDelegate.swift */; };
 		698D8E492622A05F00CE0C30 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698D8E482622A05F00CE0C30 /* ViewController.swift */; };
 		698D8E4C2622A05F00CE0C30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 698D8E4A2622A05F00CE0C30 /* Main.storyboard */; };
 		698D8E4E2622A06700CE0C30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 698D8E4D2622A06700CE0C30 /* Assets.xcassets */; };
 		698D8E512622A06700CE0C30 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 698D8E4F2622A06700CE0C30 /* LaunchScreen.storyboard */; };
+		69E3A6002623A3FD002424A1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 69E3A5FF2623A3FD002424A1 /* GoogleService-Info.plist */; };
+		69E6D99A262376F1002251AA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E6D999262376F1002251AA /* LoginViewController.swift */; };
+		69E6D99C2623771E002251AA /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E6D99B2623771E002251AA /* RegisterViewController.swift */; };
+		69E6D99E2623778F002251AA /* MyPicturesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E6D99D2623778F002251AA /* MyPicturesViewController.swift */; };
+		69E6D9A0262377B6002251AA /* AddImagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E6D99F262377B6002251AA /* AddImagesViewController.swift */; };
+		69E6D9A226237820002251AA /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E6D9A126237820002251AA /* GalleryViewController.swift */; };
+		69E6D9A4262389C0002251AA /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E6D9A3262389C0002251AA /* PhotoCollectionViewCell.swift */; };
+		888F3479FEAC85198C8DCB5D /* Pods_My_collection_of_moments.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1023C4CF25B2552B38F5B64 /* Pods_My_collection_of_moments.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		698D8E412622A05F00CE0C30 /* My collection of moments.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My collection of moments.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		691725C726261B7E00335406 /* DetailPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPhotoViewController.swift; sourceTree = "<group>"; };
+		691725C9262644CD00335406 /* ImageScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageScrollView.swift; sourceTree = "<group>"; };
+		698D8E412622A05F00CE0C30 /* My collection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My collection.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		698D8E442622A05F00CE0C30 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		698D8E462622A05F00CE0C30 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		698D8E482622A05F00CE0C30 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +36,16 @@
 		698D8E4D2622A06700CE0C30 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		698D8E502622A06700CE0C30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		698D8E522622A06700CE0C30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69E3A5FF2623A3FD002424A1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		69E6D999262376F1002251AA /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		69E6D99B2623771E002251AA /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		69E6D99D2623778F002251AA /* MyPicturesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPicturesViewController.swift; sourceTree = "<group>"; };
+		69E6D99F262377B6002251AA /* AddImagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddImagesViewController.swift; sourceTree = "<group>"; };
+		69E6D9A126237820002251AA /* GalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
+		69E6D9A3262389C0002251AA /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		93FA28304E35126C3C9B46C4 /* Pods-My collection of moments.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My collection of moments.release.xcconfig"; path = "Target Support Files/Pods-My collection of moments/Pods-My collection of moments.release.xcconfig"; sourceTree = "<group>"; };
+		A1023C4CF25B2552B38F5B64 /* Pods_My_collection_of_moments.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_My_collection_of_moments.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8ADC868294083D67FFEDC3F /* Pods-My collection of moments.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My collection of moments.debug.xcconfig"; path = "Target Support Files/Pods-My collection of moments/Pods-My collection of moments.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				888F3479FEAC85198C8DCB5D /* Pods_My_collection_of_moments.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,13 +65,15 @@
 			children = (
 				698D8E432622A05F00CE0C30 /* My collection of moments */,
 				698D8E422622A05F00CE0C30 /* Products */,
+				F378909BEAAE30AE71E46EAE /* Pods */,
+				7AFC5EC5D09A9FEB2DBC58AD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		698D8E422622A05F00CE0C30 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				698D8E412622A05F00CE0C30 /* My collection of moments.app */,
+				698D8E412622A05F00CE0C30 /* My collection.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -63,8 +88,34 @@
 				698D8E4D2622A06700CE0C30 /* Assets.xcassets */,
 				698D8E4F2622A06700CE0C30 /* LaunchScreen.storyboard */,
 				698D8E522622A06700CE0C30 /* Info.plist */,
+				69E3A5FF2623A3FD002424A1 /* GoogleService-Info.plist */,
+				69E6D999262376F1002251AA /* LoginViewController.swift */,
+				69E6D99B2623771E002251AA /* RegisterViewController.swift */,
+				69E6D99D2623778F002251AA /* MyPicturesViewController.swift */,
+				69E6D99F262377B6002251AA /* AddImagesViewController.swift */,
+				69E6D9A126237820002251AA /* GalleryViewController.swift */,
+				69E6D9A3262389C0002251AA /* PhotoCollectionViewCell.swift */,
+				691725C726261B7E00335406 /* DetailPhotoViewController.swift */,
+				691725C9262644CD00335406 /* ImageScrollView.swift */,
 			);
 			path = "My collection of moments";
+			sourceTree = "<group>";
+		};
+		7AFC5EC5D09A9FEB2DBC58AD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A1023C4CF25B2552B38F5B64 /* Pods_My_collection_of_moments.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F378909BEAAE30AE71E46EAE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A8ADC868294083D67FFEDC3F /* Pods-My collection of moments.debug.xcconfig */,
+				93FA28304E35126C3C9B46C4 /* Pods-My collection of moments.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +125,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 698D8E552622A06700CE0C30 /* Build configuration list for PBXNativeTarget "My collection of moments" */;
 			buildPhases = (
+				7C6EC69C900EDC2303ECE109 /* [CP] Check Pods Manifest.lock */,
 				698D8E3D2622A05F00CE0C30 /* Sources */,
 				698D8E3E2622A05F00CE0C30 /* Frameworks */,
 				698D8E3F2622A05F00CE0C30 /* Resources */,
+				18149EA76CE41AB56EBAD231 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -84,7 +137,7 @@
 			);
 			name = "My collection of moments";
 			productName = "My collection of moments";
-			productReference = 698D8E412622A05F00CE0C30 /* My collection of moments.app */;
+			productReference = 698D8E412622A05F00CE0C30 /* My collection.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -126,6 +179,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				698D8E512622A06700CE0C30 /* LaunchScreen.storyboard in Resources */,
+				69E3A6002623A3FD002424A1 /* GoogleService-Info.plist in Resources */,
 				698D8E4E2622A06700CE0C30 /* Assets.xcassets in Resources */,
 				698D8E4C2622A05F00CE0C30 /* Main.storyboard in Resources */,
 			);
@@ -133,12 +187,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		18149EA76CE41AB56EBAD231 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-My collection of moments/Pods-My collection of moments-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-My collection of moments/Pods-My collection of moments-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-My collection of moments/Pods-My collection of moments-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7C6EC69C900EDC2303ECE109 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-My collection of moments-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		698D8E3D2622A05F00CE0C30 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69E6D99A262376F1002251AA /* LoginViewController.swift in Sources */,
+				69E6D99E2623778F002251AA /* MyPicturesViewController.swift in Sources */,
+				691725C826261B7E00335406 /* DetailPhotoViewController.swift in Sources */,
+				69E6D99C2623771E002251AA /* RegisterViewController.swift in Sources */,
 				698D8E492622A05F00CE0C30 /* ViewController.swift in Sources */,
+				691725CA262644CD00335406 /* ImageScrollView.swift in Sources */,
+				69E6D9A0262377B6002251AA /* AddImagesViewController.swift in Sources */,
+				69E6D9A4262389C0002251AA /* PhotoCollectionViewCell.swift in Sources */,
+				69E6D9A226237820002251AA /* GalleryViewController.swift in Sources */,
 				698D8E452622A05F00CE0C30 /* AppDelegate.swift in Sources */,
 				698D8E472622A05F00CE0C30 /* SceneDelegate.swift in Sources */,
 			);
@@ -282,6 +386,7 @@
 		};
 		698D8E562622A06700CE0C30 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8ADC868294083D67FFEDC3F /* Pods-My collection of moments.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -291,7 +396,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.new.My-collection-of-moments";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "My collection";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -299,6 +404,7 @@
 		};
 		698D8E572622A06700CE0C30 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93FA28304E35126C3C9B46C4 /* Pods-My collection of moments.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -308,7 +414,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.new.My-collection-of-moments";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "My collection";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
